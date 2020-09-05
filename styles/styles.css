@@ -1,0 +1,557 @@
+body
+{
+	color: #232323;
+	font-family: Arial, sans-serif;
+}
+
+/*Nav*/
+.mainNav
+{
+	list-style-type: none;
+	text-align: center;
+	font-weight: 700;
+}
+
+.mainNav li a
+{
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/*Cover*/
+#cover img
+{
+	width: 100%;
+}
+
+/*
+https://davidwalsh.name/responsive-iframes
+https://blog.theodo.com/2018/01/responsive-iframes-css-trick/
+https://www.smashingmagazine.com/2014/02/making-embedded-content-work-in-responsive-design/
+https://benmarshall.me/responsive-iframes/
+
+The above use an identical technique to make the iframe work as intended. 
+I did not want to risk losing 40 points so I came up with the CSS below. 
+It is not perfect but it is mine. 
+*/
+
+.iframeDiv
+{
+	width: 80%;
+	margin: auto;
+}
+
+.iframeDiv iframe
+{
+	width: 100%;
+}
+
+/*Main*/
+
+figcaption
+{
+	font-weight: 700;
+}
+
+figure
+{
+	text-align: center;
+}
+
+.portfolio
+{
+	width: 100%;
+	height: 80%;
+	border: 3px solid #232323;
+	border-radius: 5%;
+}
+
+h2
+{
+	color: #6c63ff;
+}
+
+.mainContent:hover
+{
+	background-color: inherit;
+	color: inherit;
+}
+
+.mainContent span
+{
+	font-weight: 700;
+}
+
+.mainContent img
+{
+	width: 100%;
+}
+
+.mainContent .teamimg
+{
+	border-radius: 50%;
+}
+
+#mainLabel
+{
+	background-color: #FFF
+	color: #232323;
+	box-shadow: none;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+#problemimg
+{
+	width: 50%;
+	margin: auto;
+}
+
+table
+{
+	text-align: center;
+	margin: 5% auto;
+}
+
+table .label
+{
+	font-weight: 700;
+	background-color: #232323;
+	color: #FFF;
+	box-shadow: 2px 2px 2px #FFF;
+
+}
+
+td
+{
+	border: 2px solid #232323;
+	padding: 2%;
+	box-shadow: 5px 5px 5px #232323;
+}
+
+
+/*HR*/
+.topHr
+{
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    margin-bottom: -70px;
+}
+
+.bottomHr
+{
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+
+/*Footer*/
+footer
+{
+	text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Small Screen*/
+@media only screen and (max-width: 600px)
+{
+.logo
+{
+	width: 75%;
+}
+	
+	
+
+
+/*Nav Bar*/
+.mainNav
+{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;	
+	padding-top: 5%;
+}
+
+.mainNav li
+{
+	margin: auto;
+}
+
+.navLink
+{
+	font-weight: 700;
+	padding: 15%;
+}
+
+
+.navLink:hover
+{
+	background-color: #232323;
+	color: #FFF;
+}
+
+.navLink:active
+{
+	background-color: #232323;
+	color: #FFF;
+}
+
+.mainNav #home
+{
+	grid-column: 2/3;
+	grid-row: 1/3;
+}
+
+.mainNav #aboutUs
+{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.mainNav #ourTeam
+{
+	grid-column: 3/4;
+	grid-row: 1/2;
+}
+
+.mainNav #ourWork
+{
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+.mainNav #countactUs
+{
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+
+
+
+/*Cover*/
+#cover
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50vh;
+}
+
+
+
+
+/*Main*/
+article
+{
+	padding: 10%;
+	font-size: 1.5em;
+	border: 1px solid #232323;
+	box-shadow: 1px 1px 1px #232323;
+	margin-bottom: 15%;
+}
+
+.mainContent
+{
+	
+	list-style-type: circle;
+	width: 80%;
+	margin: 5% auto;
+}
+
+.teamimg
+{
+	width: 80%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Medium Screen*/
+@media only screen and (min-width: 600px)
+{
+
+	/*Nav*/
+	.mainNav
+	{
+		display: flex;
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+	
+	}
+	
+	.navLink
+	{		
+		background: #232323;
+		color: #FFF;
+		margin: 0;
+		padding: 5%;	
+	}
+	
+	li:hover
+	{
+	background-color: #FFF;
+	color: #232323;
+	}
+
+	li:active
+	{
+	background-color: #FFF;
+	color: #232323;
+	}
+
+
+	/*Cover*/
+	#cover img
+	{
+		height: 65vh;
+	}
+
+
+	
+	/*Main*/
+	main
+	{
+		width: 80%;
+		margin: auto;
+		padding: 5% 0;
+	}
+
+	#article
+	{
+		border-bottom: 2px solid #232323;
+		box-shadow: 1px 1px 1px #232323;
+		margin-bottom: 10%;
+		padding: 5%;
+	}
+
+
+	.mainContent
+	{
+		margin-bottom: 10%;
+	}
+
+	.mainContent .teamimg
+	{
+		width: 25%;
+	}
+	
+	table
+	{
+		width: 80%;
+	}
+
+	.teamContent
+	{
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Large Screen*/
+@media only screen and (min-width: 1100px)
+{
+	#wrapper
+	{
+		width: 70%;
+		margin: auto;
+		background-color: #FFF;
+		padding: 5%
+	}
+	
+	body
+	{
+		background-color: #232323;
+	}
+
+	/*Nav*/
+	
+	.navLink
+	{
+		background-color: inherit;
+		color: inherit;
+	}
+	
+	.navLink:hover
+	{
+		background-color: #232323;
+		color: #FFF;
+	}
+
+	.navLink:active
+	{
+		background-color: #232323;
+		color: #FFF;
+	}
+	
+	.mainNav
+	{
+		display: flex;
+		list-style: none;
+		margin: 0;
+		font-size:1em;
+		border-bottom: 2px solid #232323;
+	}
+
+	.mainNav .navLink
+	{
+		padding: 2%;
+		border: 1px solid #232323;
+		border-radius: 50%;
+		margin: 2%;
+		box-shadow: 2px 2px 2px #232323;
+	}
+
+	.push
+	{
+		margin-right: auto;
+	}
+
+
+	/*Cover*/
+	#cover
+	{
+		width: 80%;
+		margin: auto;
+	}
+
+
+	/*Main*/
+
+	main
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: auto;
+	}
+
+	#article
+	{
+		padding: 5%;
+		font-size: 1.5em;
+		border: 1px solid #232323;
+		box-shadow: 1px 1px 1px #232323;
+		grid-column: 1/4; 
+		grid-row: 1/2;
+	}
+
+	.articleContent
+	{
+		grid-column: 1/3; 
+	}
+
+	.articleimg
+	{
+		grid-column: 3/4;
+	}
+
+	.mainContent
+	{
+		padding: 15%;
+		margin-bottom: auto;
+	}
+
+    .mainContent .teamimg
+	{
+		width: 100%;
+	}
+
+	#pricing
+	{
+		grid-column: 1/4;
+	}
+
+}
+
+
+
+/*Extra Wide Screen*/
+@media only screen and (min-width: 2000px)
+{
+	#wrapper
+	{
+		max-width: 2000px;
+	}
+}
